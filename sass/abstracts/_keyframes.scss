@@ -1,0 +1,46 @@
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+}
+
+@keyframes textappear {
+  from {
+    color: rgba($color: #000000, $alpha: 0);
+  }
+  to {
+    color: rgba($color: #000000, $alpha: 1);
+  }
+}
+
+@keyframes textappearwhite {
+  from {
+    color: rgba($color: white, $alpha: 0);
+  }
+  to {
+    color: rgba($color: white, $alpha: 1);
+  }
+}
+
+@keyframes extend {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}

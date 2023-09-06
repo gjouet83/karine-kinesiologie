@@ -1,6 +1,11 @@
 .home {
-  & > p {
-    padding-left: 20px;
+  & p,
+  h2,
+  h3,
+  ul,
+  li {
+    animation: ease-in-out 2s forwards textappear;
+    color: rgba($color: #000000, $alpha: 0);
   }
   &__title {
     text-align: center;
@@ -8,7 +13,5 @@
   &__contact {
     display: flex;
     justify-content: center;
-    position: sticky;
-    bottom: 0px;
   }
 }
