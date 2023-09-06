@@ -1,0 +1,25 @@
+.linkButton {
+  cursor: pointer;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 80vw;
+  height: 3rem;
+  border-radius: 5px;
+  background-color: $linkButton;
+  box-shadow: $boxShadow;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  & a {
+    display: block;
+    text-decoration: none;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+  }
+}

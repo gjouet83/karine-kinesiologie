@@ -1,0 +1,14 @@
+.home {
+  & > p {
+    padding-left: 20px;
+  }
+  &__title {
+    text-align: center;
+  }
+  &__contact {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    bottom: 0px;
+  }
+}

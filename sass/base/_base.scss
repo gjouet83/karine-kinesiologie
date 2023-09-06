@@ -1,0 +1,21 @@
+html {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+    line-height: 3rem;
+    color: white;
+  }
+  body {
+    margin: 0;
+    background: $BodyBackgroundColor;
+  }
+  section {
+    padding: 0 20px 0 20px;
+  }
+}

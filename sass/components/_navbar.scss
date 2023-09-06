@@ -1,0 +1,22 @@
+.navbar {
+  position: absolute;
+  width: 100vw;
+  height: 0;
+  background: $HeaderBackgroundColor;
+  text-align: center;
+  transition: height 0.6s ease-in-out;
+  transform-origin: top;
+  top: 150px;
+  overflow: hidden;
+  z-index: 3;
+  &__list {
+    &__element {
+      color: white;
+    }
+  }
+}
+
+.isOpen {
+  transform-origin: top;
+  height: 196px;
+}
