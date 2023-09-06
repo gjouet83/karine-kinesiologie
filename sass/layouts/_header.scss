@@ -19,10 +19,11 @@
     width: 100%;
     font-size: 24px;
     font-weight: 600;
-    color: rgb(2, 70, 2);
+    color: white;
     grid-column: 2;
     text-align: center;
     z-index: 3;
+    @extend %textShadow;
     &__name {
       position: relative;
       top: 20px;
