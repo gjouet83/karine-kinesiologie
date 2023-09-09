@@ -2,10 +2,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  animation: ease-in-out 2s forwards textappear;
   &__title {
     text-align: center;
+    animation: ease-in-out 2s forwards slideinleft;
   }
   &__portrait {
+    animation: ease-in-out 2s appear;
     &__img {
       max-width: 400px;
       width: 100%;

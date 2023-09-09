@@ -1,0 +1,35 @@
+.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    animation: ease-in-out 2s forwards slideinleft;
+  }
+  &__card {
+    width: 80vw;
+    max-width: 400px;
+    height: fit-content;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 15px;
+    text-align: center;
+    margin: 30px;
+    box-shadow: $boxShadow;
+    animation: ease-in-out 2s appear;
+    &__title {
+      padding: 20px;
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 300;
+      color: white;
+      background-color: green;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+    }
+    &__content {
+      padding: 20px;
+      margin: 0;
+      font-size: 3rem;
+    }
+  }
+}
