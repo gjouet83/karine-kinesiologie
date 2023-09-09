@@ -1,0 +1,19 @@
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__title {
+    text-align: center;
+  }
+  &__portrait {
+    &__img {
+      max-width: 400px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &__describ {
+      text-align: right;
+    }
+  }
+}

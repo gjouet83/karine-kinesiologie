@@ -25,7 +25,6 @@
     grid-column: 2;
     text-align: center;
     z-index: 3;
-    @extend %textShadow;
     animation: ease-in-out 2s forwards slidein;
     &__name {
       position: relative;
@@ -35,9 +34,9 @@
     }
     &__job {
       bottom: -80px;
-      left: 60px;
       position: relative;
       display: block;
+      font-weight: bolder;
     }
   }
   &__buttonBurgerMenu {

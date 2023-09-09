@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="./img/favicon-256x256.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
@@ -37,9 +37,11 @@
       <img
         class="header__bgndImg"
         alt="branche d'arbre"
-        src="./img/IMG_0052.webp"
+        src="./img/banniere-800w.webp"
+        srcset="./img/banniere-250w.webp 250w, ./img/banniere-800w.webp 800w"
+        sizes="250px"
+        width="234"
         height="150"
-        width="250"
       />
       <h1 class="header__title">
         <strong class="header__title__name">Karine Benvenuti</strong>
@@ -82,7 +84,39 @@
         </ul>
       </nav>
     </header>
-    <main class="home"></main>
+    <main>
+      <section class="aboutme">
+        <h2 class="aboutme__title">À propos de moi</h2>
+        <figure class="aboutme__portrait">
+          <img
+            class="aboutme__portrait__img"
+            src="./img/KARINE_13_webp.webp"
+            width="310"
+            height="465"
+          />
+          <figcaption class="aboutme__portrait__describ">
+            Karine Benvenuti
+          </figcaption>
+        </figure>
+        <p>
+          Après vingt années passées dans la fonction publique, j’ai entamé une
+          reconversion professionnelle en 2021. En effet, après un burn out, et
+          deux deuils, j’avais le sentiment que ma carrière n’avait plus de
+          sens. Mon travail ne m’apportait plus aucun épanouissement et aucune
+          satisfaction. Je m’étais déjà intéressée par le passé au reiki et au
+          lahochi, sans toutefois sauter le pas pour ouvrir un cabinet car je ne
+          me sentais pas légitime. Ce qu’il me manquait, c’était de savoir où je
+          posais mes mains et pourquoi. Ces réponses, je les ai trouvées en me
+          lançant dans une formation pour devenir kinésiologue. Ainsi, après 18
+          mois de travail acharné, 620 heures de formation, j’ai obtenu ma
+          certification de kinésiologue ainsi qu’une certification en
+          praticienne d’intégration des réflexes archaïques. Ayant enfin la
+          réponse à mes questions je saute le pas en 2023 pour ouvrir mon
+          cabinet. Mon éthique : l’écoute de l’autre dans le non-jugement et la
+          bienveillance.
+        </p>
+      </section>
+    </main>
     <footer class="footer" id="footer">
       <div class="footer__contact">
         <address class="footer__contact__address">
@@ -110,6 +144,7 @@
             height="2em"
             viewBox="0 0 384 512"
             class="footer__contact__address__mapIco"
+            aria-label="icone qui représente un point gps "
           >
             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
             <path
@@ -137,17 +172,26 @@
             aria-label="fédération de kinésiologie professionnelle"
           >
             <img
-              src="./img/FKP_Logotype_Couleur.webp"
+              src="./img/FKP_Logotype_Couleur-1994w.webp"
+              srcset="
+                ./img/FKP_Logotype_Couleur-200w.webp   200w,
+                ./img/FKP_Logotype_Couleur-320w.webp   320w,
+                ./img/FKP_Logotype_Couleur-480w.webp   480w,
+                ./img/FKP_Logotype_Couleur-640w.webp   640w,
+                ./img/FKP_Logotype_Couleur-800w.webp   800w,
+                ./img/FKP_Logotype_Couleur-1994w.webp 1994w
+              "
+              sizes="200px"
               alt="logo de la fédération de kinésiologie professionnelle"
-              width="140px"
-              height="53px"
               class="footer__partner__figure__img"
+              width="200"
+              height="76"
             />
           </a>
+          <figcaption class="footer__partner__figcaption">
+            Membre de la Fédération de Kinésilogie Professionnelle
+          </figcaption>
         </figure>
-        <figcaption class="footer__partner__figcaption">
-          Membre de la Fédération de Kinésilogie Professionnelle
-        </figcaption>
       </div>
       <div class="footer__socialNetwork">
         <a

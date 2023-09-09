@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="./img/favicon-256x256.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
@@ -37,9 +37,11 @@
       <img
         class="header__bgndImg"
         alt="branche d'arbre"
-        src="./img/IMG_0052.webp"
+        src="./img/banniere-800w.webp"
+        srcset="./img/banniere-250w.webp 250w, ./img/banniere-800w.webp 800w"
+        sizes="250px"
+        width="234"
         height="150"
-        width="250"
       />
       <h1 class="header__title">
         <strong class="header__title__name">Karine Benvenuti</strong>
@@ -86,6 +88,12 @@
       <div class="home__contact linkButton" id="contactButton">
         <a class="home__contact" href="./contact.html"> Prendre Contact </a>
       </div>
+      <aside class="home__aside">
+        <q class="home__aside__citation">
+          Tout ce qui ne s’exprime pas s’imprime
+        </q>
+        <em class="home__aside__author">Jacques Salomé</em>
+      </aside>
       <section class="home__about">
         <h2 class="home__title">Qu'est ce que la Kinésiologie</h2>
         <p>
@@ -104,34 +112,37 @@
         <h3>Les trois principales techniques utilisées en kinésiologie :</h3>
         <ol>
           <li>
-            Santé par le toucher : C’est le fondement même de la kinésiologie.
-            Le concept repose sur le fait que chaque méridien d’acupuncture est
-            lié à un organe et à un muscle. Le test des muscles en question
-            permet d’établir le profil énergétique de la personne, puis de
-            permettre sa rééquilibration. Ce principe est basé sur le triangle
-            de la santé : L’humain est constitué de trois dimensions :
-            structurelle, biochimique et psycho-émotionnelle. Lorsqu’un des
-            systèmes est déséquilibré, il peut par conséquent déséquilibrer les
-            autres systèmes. Et inversement, en rééquilibrant un système, on
-            peut rééquilibrer les autres.
+            <h4>Santé par le toucher :</h4>
+            C’est le fondement même de la kinésiologie. Le concept repose sur le
+            fait que chaque méridien d’acupuncture est lié à un organe et à un
+            muscle. Le test des muscles en question permet d’établir le profil
+            énergétique de la personne, puis de permettre sa rééquilibration. Ce
+            principe est basé sur le triangle de la santé : L’humain est
+            constitué de trois dimensions : structurelle, biochimique et
+            psycho-émotionnelle. Lorsqu’un des systèmes est déséquilibré, il
+            peut par conséquent déséquilibrer les autres systèmes. Et
+            inversement, en rééquilibrant un système, on peut rééquilibrer les
+            autres.
           </li>
           <li>
-            L’édu-kinésiologie : L’édu-kinésiologie permet d’intervenir sur des
-            difficultés telles que l’apprentissage, le manque de concentration,
-            les problèmes de communication. Les protocoles utilisés dans cette
-            technique sont basés sur la notion que l’apprentissage ne peut être
-            séparé de la notion de mouvement. Ces mouvements facilitent le
-            développement de la coordination en facilitant notamment la
-            communication entre les deux hémisphères du cerveau.
+            <h4>L’édu-kinésiologie :</h4>
+            L’édu-kinésiologie permet d’intervenir sur des difficultés telles
+            que l’apprentissage, le manque de concentration, les problèmes de
+            communication. Les protocoles utilisés dans cette technique sont
+            basés sur la notion que l’apprentissage ne peut être séparé de la
+            notion de mouvement. Ces mouvements facilitent le développement de
+            la coordination en facilitant notamment la communication entre les
+            deux hémisphères du cerveau.
           </li>
           <li>
-            Intégration Corps / Mental : Notre corps conserve toute notre
-            histoire dans ses cellules, y compris les expériences négatives qui
-            génèrent un stress susceptible d’être réactivé dans certaines
-            situations, entrainant des sentiments d’inhibition et de perte de
-            contrôle. Comprendre l’origine d’un stress et en dissocier la charge
-            émotionnelle permet à chacun de retrouver son pouvoir personnel, et
-            de semer les graines d’un nouveau possible.
+            <h4>Intégration Corps / Mental :</h4>
+            Notre corps conserve toute notre histoire dans ses cellules, y
+            compris les expériences négatives qui génèrent un stress susceptible
+            d’être réactivé dans certaines situations, entrainant des sentiments
+            d’inhibition et de perte de contrôle. Comprendre l’origine d’un
+            stress et en dissocier la charge émotionnelle permet à chacun de
+            retrouver son pouvoir personnel, et de semer les graines d’un
+            nouveau possible.
           </li>
         </ol>
       </section>
@@ -163,6 +174,7 @@
             height="2em"
             viewBox="0 0 384 512"
             class="footer__contact__address__mapIco"
+            aria-label="icone qui représente un point gps "
           >
             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
             <path
@@ -190,17 +202,26 @@
             aria-label="fédération de kinésiologie professionnelle"
           >
             <img
-              src="./img/FKP_Logotype_Couleur.webp"
+              src="./img/FKP_Logotype_Couleur-1994w.webp"
+              srcset="
+                ./img/FKP_Logotype_Couleur-200w.webp   200w,
+                ./img/FKP_Logotype_Couleur-320w.webp   320w,
+                ./img/FKP_Logotype_Couleur-480w.webp   480w,
+                ./img/FKP_Logotype_Couleur-640w.webp   640w,
+                ./img/FKP_Logotype_Couleur-800w.webp   800w,
+                ./img/FKP_Logotype_Couleur-1994w.webp 1994w
+              "
+              sizes="200px"
               alt="logo de la fédération de kinésiologie professionnelle"
-              width="140px"
-              height="53px"
               class="footer__partner__figure__img"
+              width="200"
+              height="76"
             />
           </a>
+          <figcaption class="footer__partner__figcaption">
+            Membre de la Fédération de Kinésilogie Professionnelle
+          </figcaption>
         </figure>
-        <figcaption class="footer__partner__figcaption">
-          Membre de la Fédération de Kinésilogie Professionnelle
-        </figcaption>
       </div>
       <div class="footer__socialNetwork">
         <a
