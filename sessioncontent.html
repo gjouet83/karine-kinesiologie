@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="./img/favicon-256x256.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
@@ -37,9 +37,11 @@
       <img
         class="header__bgndImg"
         alt="branche d'arbre"
-        src="./img/IMG_0052.webp"
+        src="./img/banniere-800w.webp"
+        srcset="./img/banniere-250w.webp 250w, ./img/banniere-800w.webp 800w"
+        sizes="250px"
+        width="234"
         height="150"
-        width="250"
       />
       <h1 class="header__title">
         <strong class="header__title__name">Karine Benvenuti</strong>
@@ -61,12 +63,17 @@
             <a onclick="handleClickClose()" href="./index.html"> Accueil </a>
           </li>
           <li class="navbar__list__element">
+            <a href="./aboutkinesio.html" onclick="handleClickClose()">
+              Qu'est ce que la Kinésilogie
+            </a>
+          </li>
+          <li class="navbar__list__element">
             <a href="./aboutme.html" onclick="handleClickClose()">
               À propos de moi
             </a>
           </li>
           <li class="navbar__list__element">
-            <a href="./pricing.html" onclick="handleClickClose()"> Tarif </a>
+            <a href="./pricing.html" onclick="handleClickClose()"> Tarifs </a>
           </li>
           <li class="navbar__list__element">
             <a href="./sessioncontent.html" onclick="handleClickClose()">
@@ -82,7 +89,7 @@
         </ul>
       </nav>
     </header>
-    <main class="home"></main>
+    <main></main>
     <footer class="footer" id="footer">
       <div class="footer__contact">
         <address class="footer__contact__address">
@@ -138,17 +145,26 @@
             aria-label="fédération de kinésiologie professionnelle"
           >
             <img
-              src="./img/FKP_Logotype_Couleur.webp"
+              src="./img/FKP_Logotype_Couleur-1994w.webp"
+              srcset="
+                ./img/FKP_Logotype_Couleur-200w.webp   200w,
+                ./img/FKP_Logotype_Couleur-320w.webp   320w,
+                ./img/FKP_Logotype_Couleur-480w.webp   480w,
+                ./img/FKP_Logotype_Couleur-640w.webp   640w,
+                ./img/FKP_Logotype_Couleur-800w.webp   800w,
+                ./img/FKP_Logotype_Couleur-1994w.webp 1994w
+              "
+              sizes="200px"
               alt="logo de la fédération de kinésiologie professionnelle"
-              width="140px"
-              height="53px"
               class="footer__partner__figure__img"
+              width="200"
+              height="76"
             />
           </a>
+          <figcaption class="footer__partner__figcaption">
+            Membre de la Fédération de Kinésilogie Professionnelle
+          </figcaption>
         </figure>
-        <figcaption class="footer__partner__figcaption">
-          Membre de la Fédération de Kinésilogie Professionnelle
-        </figcaption>
       </div>
       <div class="footer__socialNetwork">
         <a

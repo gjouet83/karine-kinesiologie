@@ -1,6 +1,5 @@
 .home {
   & p,
-  h2,
   h3,
   ul,
   li,
@@ -8,9 +7,6 @@
   em {
     animation: ease-in-out 2s forwards textappear;
     color: rgba($color: #000000, $alpha: 0);
-  }
-  &__title {
-    text-align: center;
   }
   &__contact {
     display: flex;

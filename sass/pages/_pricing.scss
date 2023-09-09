@@ -2,9 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  &__title {
-    animation: ease-in-out 2s forwards slideinleft;
-  }
   &__card {
     width: 80vw;
     max-width: 400px;

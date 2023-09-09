@@ -1,0 +1,45 @@
+.contact {
+  display: grid;
+  &__address {
+    display: grid;
+    grid-template-columns: 30px auto;
+    gap: 16px;
+    justify-content: flex-start;
+    & a {
+      color: black;
+    }
+    &__icocontainer {
+      align-self: center;
+      justify-self: center;
+      width: 30px;
+      height: 30px;
+      background-color: green;
+      border-radius: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__phone,
+    &__mail,
+    &__map {
+      &__ico {
+        align-self: center;
+        justify-self: center;
+        grid-column: 1;
+        color: white;
+        fill: white;
+      }
+      &__link {
+        grid-column: 2;
+      }
+    }
+  }
+  &__map {
+    max-width: 80vw;
+    max-height: 80vw;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
