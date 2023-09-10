@@ -2,8 +2,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   animation: ease-in-out 2s forwards textappear;
   &__portrait {
+    max-width: 400px;
     animation: ease-in-out 2s appear;
     &__img {
       max-width: 400px;

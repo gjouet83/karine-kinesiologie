@@ -6,15 +6,25 @@
   width: 100vw;
   height: 150px;
   background: $HeaderBackgroundColor;
+  @media all and (min-width: 769px) {
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    height: inherit;
+  }
   &__bgndImg {
     position: absolute;
-    width: 100vw;
+    justify-self: center;
     height: 100%;
     object-fit: contain;
     overflow: hidden;
     z-index: 0;
     opacity: 0;
     animation: ease-in-out 2s forwards appear;
+    @media all and (min-width: 769px) {
+      width: 100%;
+    }
   }
   &__title {
     height: 100%;
@@ -26,14 +36,17 @@
     text-align: center;
     z-index: 3;
     animation: ease-in-out 2s forwards slideinright;
+    @media all and (min-width: 769px) {
+    }
     &__name {
       position: relative;
       top: 20px;
-      left: -60px;
+      left: -40px;
       font-weight: bolder;
     }
     &__job {
       bottom: -80px;
+      right: -20px;
       position: relative;
       display: block;
       font-weight: bolder;
@@ -48,6 +61,9 @@
     width: 48px;
     height: 48px;
     padding: 0;
+    @media all and (min-width: 769px) {
+      display: none;
+    }
   }
   &__burgerMenu {
     justify-self: center;
@@ -58,6 +74,9 @@
     grid-column: 3;
     width: 40px;
     height: 39px;
+    @media all and (min-width: 769px) {
+      display: none;
+    }
     &__line {
       width: 80%;
       height: 5px;
