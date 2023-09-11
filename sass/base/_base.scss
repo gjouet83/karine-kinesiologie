@@ -14,6 +14,14 @@ html {
   body {
     margin: 0;
     background: $BodyBackgroundColor;
+    @media all and (min-width: 769px) {
+      background: white;
+    }
+  }
+  main {
+    @media all and (min-width: 769px) {
+      margin: 0 100px 0 100px;
+    }
   }
   section {
     padding: 0 20px 0 20px;
