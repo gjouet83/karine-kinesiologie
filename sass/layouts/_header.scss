@@ -8,6 +8,7 @@
   background: $HeaderBackgroundColor;
   @include tb-desk {
     grid-template-rows: 3fr 1fr;
+    height: 200px;
     justify-content: center;
     overflow: hidden;
   }
@@ -40,6 +41,7 @@
     animation: ease-in-out 2s forwards slideinright;
     @include tb-desk {
       grid-column: 2/3;
+      font-size: 30px;
     }
     &__name {
       position: relative;
@@ -49,13 +51,13 @@
     }
     &__job {
       bottom: -80px;
-      right: -20px;
+      right: 0px;
       position: relative;
       display: block;
       font-weight: bolder;
       @include tb-desk {
-        bottom: -20px;
-        right: -20px;
+        bottom: -60px;
+        right: -100px;
       }
     }
   }
