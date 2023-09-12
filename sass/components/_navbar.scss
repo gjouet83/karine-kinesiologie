@@ -9,7 +9,7 @@
   top: 150px;
   overflow: hidden;
   z-index: 3;
-  @media all and (min-width: 769px) {
+  @include tb-desk {
     background: transparent;
     text-align: left;
     z-index: 4;
@@ -21,7 +21,7 @@
     transition: inherit;
   }
   &__list {
-    @media all and (min-width: 769px) {
+    @include tb-desk {
       display: flex;
       justify-content: space-around;
       border-radius: 25px;

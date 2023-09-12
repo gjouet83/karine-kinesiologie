@@ -14,12 +14,12 @@ html {
   body {
     margin: 0;
     background: $BodyBackgroundColor;
-    @media all and (min-width: 769px) {
+    @include tb-desk {
       background: white;
     }
   }
   main {
-    @media all and (min-width: 769px) {
+    @include tb-desk {
       margin: 0 100px 0 100px;
     }
   }

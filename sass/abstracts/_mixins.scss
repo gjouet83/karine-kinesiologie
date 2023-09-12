@@ -1,0 +1,5 @@
+@mixin tb-desk {
+  @media (min-width: #{$tb-desk}) {
+    @content;
+  }
+}

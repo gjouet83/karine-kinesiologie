@@ -13,12 +13,6 @@
   text-align: center;
   transform-origin: left;
   animation: ease-in-out 1s extend;
-  @media all and (min-width: 769px) {
-    position: relative;
-    width: 30vw;
-    right: -20vw;
-    top: -6rem;
-  }
   & > a {
     display: block;
     text-decoration: none;
