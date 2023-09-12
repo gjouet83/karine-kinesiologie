@@ -14,13 +14,10 @@ html {
   body {
     margin: 0;
     background: $BodyBackgroundColor;
-    @include tb-desk {
-      background: white;
-    }
   }
   main {
     @include tb-desk {
-      margin: 0 100px 0 100px;
+      margin: 0 15vw 0 15vw;
     }
   }
   section {

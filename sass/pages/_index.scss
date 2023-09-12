@@ -17,7 +17,7 @@
   }
   &__hero {
     display: grid;
-    width: 80vw;
+    background-color: white;
     &__figure {
       animation: 2s ease-in-out appear;
       width: 100vw;
@@ -25,7 +25,6 @@
       margin: 0;
       grid-row: 1;
       grid-column: 1;
-
       & img {
         width: 100%;
         height: 100%;
@@ -34,7 +33,6 @@
       @include tb-desk {
         grid-column: 1/3;
         grid-row: 1;
-        margin-top: 30px;
         max-width: 60vw;
         max-height: 60vh;
       }

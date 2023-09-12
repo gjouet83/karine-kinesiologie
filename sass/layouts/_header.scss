@@ -15,18 +15,16 @@
   &__bgndImg {
     position: absolute;
     justify-self: center;
-    height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     overflow: hidden;
     z-index: 0;
     opacity: 0;
+    width: 100vw;
+    max-width: 500px;
     animation: ease-in-out 2s forwards appear;
     @include tb-desk {
-      grid-column: 1;
-      width: 100vw;
-      height: 200%;
-      object-fit: inherit;
-      margin-top: 150px;
+      margin-top: -50px;
+      width: 500px;
     }
   }
   &__title {
