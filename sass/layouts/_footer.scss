@@ -41,12 +41,18 @@
           padding-left: 50px;
           grid-row: 2;
           @include tb-desk {
+            &:hover {
+              text-decoration: underline;
+            }
           }
         }
         &__mail {
           padding-left: 50px;
           grid-row: 3;
           @include tb-desk {
+            &:hover {
+              text-decoration: underline;
+            }
           }
         }
         &__mapIco {
@@ -54,6 +60,9 @@
           height: 16px;
           fill: white;
           @include tb-desk {
+            &:hover {
+              text-decoration: underline;
+            }
           }
         }
         &__map {
@@ -63,6 +72,9 @@
           margin-bottom: 10px;
           margin-top: 10px;
           @include tb-desk {
+            &:hover {
+              text-decoration: underline;
+            }
           }
         }
       }
@@ -85,6 +97,15 @@
           padding-left: 20%;
           margin-right: 0;
           margin-top: 20px;
+          &__facebook,
+          &__linkedin,
+          &__instagram,
+          &__twitter {
+            &:hover {
+              transition: transform 200ms ease-in-out;
+              transform: scale(1.2);
+            }
+          }
         }
       }
       &__header {

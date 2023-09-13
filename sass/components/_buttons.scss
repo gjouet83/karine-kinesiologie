@@ -17,6 +17,12 @@
     position: relative;
     top: 400px;
     right: 100px;
+    &:hover {
+      transform-origin: center;
+      transform: scale(1.1);
+      transition: transform 200ms, box-shadow 200ms;
+      box-shadow: $boxShadowHover;
+    }
   }
   & > a {
     display: block;

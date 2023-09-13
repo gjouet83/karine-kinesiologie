@@ -20,7 +20,7 @@
     z-index: 0;
     opacity: 0;
     width: 100vw;
-    max-width: 500px;
+    max-width: 255px;
     animation: ease-in-out 2s forwards appear;
     @include tb-desk {
       margin-top: -50px;

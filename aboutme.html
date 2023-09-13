@@ -14,6 +14,19 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Roboto:ital@1&display=swap"
       as="style"
     />
+    <link
+      rel="preload"
+      as="image"
+      href="./img/karine-1000w.webp"
+      imagesrcset="
+      ./img/karine-320w.webp   320w,
+      ./img/karine-480w.webp   480w,
+      ./img/karine-640w.webp   640w,
+      ./img/karine-800w.webp   800w,
+      ./img/karine-1000w.webp 1000w
+    "
+      imagesizes="400px"
+    />
     <title>
       Karine Benvenuti - Kinésiologue, Membre de la Fédération de Kinésiologie
       Professionnelle
@@ -95,9 +108,18 @@
         <figure class="aboutme__portrait">
           <img
             class="aboutme__portrait__img"
-            src="./img/KARINE_13_webp.webp"
-            width="310"
-            height="465"
+            src="./img/karine-320w.webp"
+            srcset="
+              ./img/karine-320w.webp   320w,
+              ./img/karine-480w.webp   480w,
+              ./img/karine-640w.webp   640w,
+              ./img/karine-800w.webp   800w,
+              ./img/karine-1000w.webp 1000w
+            "
+            sizes="400px"
+            width="400"
+            height="600"
+            alt="karine benvenuti souriante de face accoudée sur un muret"
           />
           <figcaption class="aboutme__portrait__describ">
             Karine Benvenuti
@@ -214,6 +236,7 @@
               href="https://www.facebook.com/karine.benvenuti.7"
               rel="noreferrer"
               aria-label="facebook"
+              class="footer__firstcontainer__socialNetwork__content__facebook"
             >
               <i class="fab fa-facebook fa-3x"></i>
             </a>
@@ -222,6 +245,7 @@
               href="https://www.linkedin.com/in/karine-benvenuti-4b8287243"
               rel="noreferrer"
               aria-label="Linkedin"
+              class="footer__firstcontainer__socialNetwork__content__linkedin"
             >
               <i class="fab fa-linkedin fa-3x"></i>
             </a>
@@ -230,6 +254,7 @@
               href="https://www.instagram.com/karine_kinesio74"
               rel="noreferrer"
               aria-label="instagram"
+              class="footer__firstcontainer__socialNetwork__content__instagram"
             >
               <i class="fab fa-instagram fa-3x"></i>
             </a>
@@ -238,6 +263,7 @@
               href="www.twitter.com"
               rel="noreferrer"
               aria-label=" X (twitter)"
+              class="footer__firstcontainer__socialNetwork__content__twitter"
             >
               <i class="fab fa-twitter fa-3x"></i>
             </a>

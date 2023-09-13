@@ -13,7 +13,7 @@
     background: transparent;
     text-align: left;
     z-index: 4;
-    top: inherit;
+    top: 0px;
     height: 3.6rem;
     overflow: visible;
     grid-column: 1/3;
@@ -21,15 +21,34 @@
     transition: inherit;
   }
   &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     @include tb-desk {
       display: flex;
       justify-content: space-around;
+      align-items: inherit;
+      flex-direction: row;
       border-radius: 25px;
       background-color: green;
       margin: 0;
     }
     &__element {
+      max-width: fit-content;
       color: white;
+      border-radius: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      @include tb-desk {
+        transition: background-color 200ms ease-in-out;
+      }
+      &:hover {
+        background-color: $linkButton;
+      }
+      &:hover a {
+        text-decoration: underline;
+      }
     }
   }
 }
