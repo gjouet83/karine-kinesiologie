@@ -1,11 +1,12 @@
 const handleClickOpen = () => {
+  /*--------- toggle navbar -------------*/
   let open = document.getElementById('nav');
-
   open.classList.toggle('isOpen');
-};
-
-const handleClickClose = () => {
-  let close = document.getElementById('nav');
-
-  close.classList.toggle('isOpen');
+  /*---------- turn menu burger to cross ------*/
+  let crossone = document.getElementById('one');
+  let crosstwo = document.getElementById('two');
+  let crossthree = document.getElementById('three');
+  crossone.classList.toggle('rotate-right');
+  crosstwo.classList.toggle('vanish');
+  crossthree.classList.toggle('rotate-left');
 };

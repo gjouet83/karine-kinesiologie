@@ -1,5 +1,8 @@
 .contact {
   display: grid;
+  @include tablet {
+    padding: 0 10vw 0 10vw;
+  }
   &__address {
     display: grid;
     grid-template-columns: 30px auto;

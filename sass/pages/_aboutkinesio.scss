@@ -1,4 +1,11 @@
 .aboutkinesio {
+  background-image: url(../../img/herophoto-2000w-background.webp);
+  @include tablet {
+    padding: 0 10vw 0 10vw;
+  }
+  @include desktop {
+    display: grid;
+  }
   & p,
   h3,
   ul,
@@ -8,11 +15,15 @@
     animation: ease-in-out 2s forwards textappear;
     color: rgba($color: #000000, $alpha: 0);
   }
-  &__contact {
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 10px;
+  &__about {
+    @include desktop {
+      line-height: 3rem;
+    }
+  }
+  & h4 {
+    @include desktop {
+      margin: 0;
+    }
   }
   &__aside {
     display: grid;
@@ -27,6 +38,10 @@
     border-radius: 10px;
     animation: ease-in-out 2s appear;
     font-style: italic;
+    @include desktop {
+      grid-row: 1;
+      grid-column: 1/3;
+    }
     &__citation {
       text-align: center;
       font-size: 1.3rem;
