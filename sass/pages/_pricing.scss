@@ -2,6 +2,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include tb-desk {
+    display: grid;
+    justify-content: center;
+  }
+  &__title {
+    @include tb-desk {
+      grid-column: 1/3;
+      grid-row: 1;
+    }
+  }
   &__card {
     width: 80vw;
     max-width: 400px;
@@ -13,6 +23,10 @@
     margin: 30px;
     box-shadow: $boxShadow;
     animation: ease-in-out 2s appear;
+    @include tb-desk {
+      grid-column: 2;
+      grid-row: 2;
+    }
     &__title {
       padding: 20px;
       margin: 0;

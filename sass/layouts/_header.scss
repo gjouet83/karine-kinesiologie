@@ -60,19 +60,3 @@
     }
   }
 }
-.rotate-right {
-  transition: all 500ms ease-in-out;
-  transform: rotate(45deg) scaleX(1.2);
-  transform-origin: left;
-  z-index: 1;
-}
-.rotate-left {
-  transition: all 500ms ease-in-out;
-  transform: rotate(-45deg) scaleX(1.2);
-  transform-origin: left;
-  z-index: 1;
-}
-.vanish {
-  transition: all 500ms ease-in-out;
-  transform: scale(0);
-}

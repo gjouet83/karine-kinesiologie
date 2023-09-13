@@ -11,11 +11,6 @@
     <link rel="preload" href="./css/main.min.css" as="style" />
     <link
       rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Roboto:ital@1&display=swap"
-      as="style"
-    />
-    <link
-      rel="preload"
       as="image"
       href="./img/herophoto-2000w.webp"
       imagesrcset="
@@ -27,16 +22,17 @@
     "
       imagesizes="(max-width: 321px) 320px, (max-width: 481px) 480px, (max-width: 641px) 640px, 800px"
     />
+    <link
+      rel="preload"
+      href="fonts/NunitoSans-VariableFont.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
     <title>
       Karine Benvenuti - Kinésiologue, Membre de la Fédération de Kinésiologie
       Professionnelle
     </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Roboto:ital@1&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./css/main.min.css" />
     <script
       defer
@@ -72,37 +68,31 @@
       <nav class="navbar" id="nav">
         <ul class="navbar__list">
           <li class="navbar__list__element">
-            <a onclick="handleClickClose()" href="./index.html"> Accueil </a>
+            <a href="./index.html"> Accueil </a>
           </li>
           <li class="navbar__list__element">
-            <a href="./aboutkinesio.html" onclick="handleClickClose()">
-              Qu'est ce que la Kinésilogie
-            </a>
+            <a href="./aboutkinesio.html"> Qu'est ce que la Kinésilogie </a>
           </li>
           <li class="navbar__list__element">
-            <a href="./aboutme.html" onclick="handleClickClose()">
-              À propos de moi
-            </a>
+            <a href="./aboutme.html"> À propos de moi </a>
           </li>
           <li class="navbar__list__element">
-            <a href="./pricing.html" onclick="handleClickClose()"> Tarifs </a>
+            <a href="./pricing.html"> Tarifs </a>
           </li>
           <li class="navbar__list__element">
-            <a href="./sessioncontent.html" onclick="handleClickClose()">
-              Contenu de la scéance
-            </a>
+            <a href="./sessioncontent.html"> Contenu de la scéance </a>
           </li>
           <li class="navbar__list__element">
-            <a href="./tools.html" onclick="handleClickClose()"> Outils </a>
+            <a href="./tools.html"> Outils </a>
           </li>
           <li class="navbar__list__element">
-            <a href="./contact.html" onclick="handleClickClose()"> Contact </a>
+            <a href="./contact.html"> Contact </a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="home">
-      <div class="home__hero">
+      <section class="home__hero">
         <figure class="home__hero__figure">
           <img
             src="./img/herophoto-2000w.webp"
@@ -117,25 +107,34 @@
             alt="personne qui se fait masser le dos"
           />
         </figure>
-        <h2 class="home__herotitle">phrase d'accroche</h2>
-        <div class="home__contact linkButton">
-          <a class="home__contact__link" href="./contact.html">
+        <h2 class="home__hero__herotitle">phrase d'accroche</h2>
+        <div class="home__hero__aside">
+          <q class="home__hero__aside__citation">
+            Tout ce qui ne s’exprime pas s’imprime
+          </q>
+          <em class="home__hero__aside__author">Jacques Salomé</em>
+        </div>
+        <div class="home__hero__contact linkButton">
+          <a class="home__hero__contact__link" href="./contact.html">
             Prendre Contact
           </a>
         </div>
-      </div>
-      <p>
-        Saepissime igitur mihi de amicitia cogitanti maxime illud considerandum
-        videri solet, utrum propter imbecillitatem atque inopiam desiderata sit
-        amicitia, ut dandis recipiendisque meritis quod quisque minus per se
-        ipse posset, id acciperet ab alio vicissimque redderet, an esset hoc
-        quidem proprium amicitiae, sed antiquior et pulchrior et magis a natura
-        ipsa profecta alia causa. Amor enim, ex quo amicitia nominata est,
-        princeps est ad benevolentiam coniungendam. Nam utilitates quidem etiam
-        ab iis percipiuntur saepe qui simulatione amicitiae coluntur et
-        observantur temporis causa, in amicitia autem nihil fictum est, nihil
-        simulatum et, quidquid est, id est verum et voluntarium.
-      </p>
+      </section>
+      <section class="home__about">
+        <h2 class="home__title">Qu'est ce que la Kinésiologie</h2>
+        <p>
+          <strong>La kinésiologie</strong> (qui signifie étymologiquement « la
+          science du mouvement ») est une technique de rééquilibrage
+          psycho-corporelle.<br />
+          - Elle s’attache au bien être global de la personne, tant au niveau
+          physique, émotionnel, mental et énergétique.<br />
+          - Elle est basée sur l’utilisation du test musculaire qui permet un
+          dialogue avec le corps afin d’identifier des causes de conflits et
+          blocages internes, conscients ou non, qui provoquent des tensions des
+          comportements inadaptés.<br />
+          - Le but est de libérer le <strong>stress</strong> rencontré.
+        </p>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__firstcontainer">
@@ -265,7 +264,12 @@
       </div>
       <div class="footer__secondcontainer">
         <span class="footer__secondcontainer__credit"
-          >Crédit Photo : freepiks</span
+          >Crédit Photo :
+          <a
+            href="https://fr.freepik.com/photos-gratuite/gros-plan-physiotherapeute-travaillant-patient-clinique_5218092.htm#query=kinesiologie&position=14&from_view=search&track=sph"
+            >Image de jcomp</a
+          >
+          sur Freepik</span
         >
         <strong class="footer__secondcontainer__sitemap">Plan du site</strong>
       </div>

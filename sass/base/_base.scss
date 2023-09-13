@@ -1,7 +1,4 @@
 html {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
   ul {
     list-style-type: none;
     padding: 0;
@@ -17,11 +14,8 @@ html {
   }
   main {
     @include desktop {
-      padding: 0 10vw 0 10vw;
+      padding: 0 15vw 0 15vw;
     }
-  }
-  section {
-    padding: 0 20px 0 20px;
   }
   h2 {
     text-align: center;

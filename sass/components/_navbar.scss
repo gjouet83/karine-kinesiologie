@@ -19,6 +19,7 @@
     grid-column: 1/3;
     grid-row: 2;
     transition: inherit;
+    animation: ease-in-out 2s forwards appear;
   }
   &__list {
     display: flex;
