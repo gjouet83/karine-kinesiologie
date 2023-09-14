@@ -1,5 +1,5 @@
 .home {
-  & > p {
+  & p {
     margin: 0;
     padding: 20px;
     animation: 2s ease-in-out textappear;
@@ -79,7 +79,9 @@
     }
   }
   &__about {
-    line-height: 3rem;
-    padding: 50px 30px 50px 30px;
+    @include tb-desk {
+      line-height: 3rem;
+      padding: 50px 30px 50px 30px;
+    }
   }
 }
