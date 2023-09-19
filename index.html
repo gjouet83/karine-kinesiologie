@@ -16,6 +16,13 @@
     />
     <link
       rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
       as="image"
       href="./img/herophoto-320w.webp"
       imagesrcset="
@@ -23,20 +30,19 @@
       ./img/herophoto-480w.webp   480w,
       ./img/herophoto-640w.webp   640w,
       ./img/herophoto-800w.webp   800w,
-      ./img/herophoto-2000w.webp 2000w
     "
-      imagesizes="(max-width: 321px) 320px, (max-width: 481px) 480px, (max-width: 641px) 640px, 320px"
+      imagesizes="(max-width: 321px) 320px, (max-width: 481px) 480px, (max-width: 641px) 640px, 800px"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="preload"
-      href="fonts/NunitoSans-VariableFont.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+      rel="stylesheet"
     />
     <title>
-      Karine Benvenuti - Kinésiologue, Membre de la Fédération de Kinésiologie
-      Professionnelle
+      Karine Benvenuti - Kinésiologue - Annecy, Membre de la Fédération de
+      Kinésiologie Professionnelle
     </title>
     <link rel="stylesheet" href="./css/main.min.css" />
     <script
@@ -50,7 +56,7 @@
     <header class="header">
       <img
         class="header__bgndImg"
-        alt="branche d'arbre"
+        alt="logo de karine benvenuti kinesiologue"
         src="./img/banniere-800w.webp"
         srcset="./img/banniere-250w.webp 250w, ./img/banniere-800w.webp 800w"
         sizes="250px"
@@ -76,19 +82,16 @@
             <a href="./index.html"> Accueil </a>
           </li>
           <li class="navbar__list__element">
-            <a href="./aboutkinesio.html"> Qu'est ce que la Kinésilogie </a>
+            <a href="./sessioncontent.html"> Contenu de la scéance </a>
+          </li>
+          <li class="navbar__list__element">
+            <a href="./tools.html"> Outils </a>
           </li>
           <li class="navbar__list__element">
             <a href="./aboutme.html"> À propos de moi </a>
           </li>
           <li class="navbar__list__element">
-            <a href="./pricing.html"> Tarifs </a>
-          </li>
-          <li class="navbar__list__element">
-            <a href="./sessioncontent.html"> Contenu de la scéance </a>
-          </li>
-          <li class="navbar__list__element">
-            <a href="./tools.html"> Outils </a>
+            <a href="./pricing.html"> Tarifs & Contact </a>
           </li>
           <li class="navbar__list__element">
             <a href="./contact.html"> Contact </a>
@@ -100,30 +103,67 @@
       <section class="home__hero">
         <figure class="home__hero__figure">
           <img
-            src="./img/herophoto-2000w.webp"
+            src="./img/herophoto-320w.webp"
             srcset="
-              ./img/herophoto-320w.webp   320w,
-              ./img/herophoto-480w.webp   480w,
-              ./img/herophoto-2000w.webp 2000w
+              ./img/herophoto-320w.webp 320w,
+              ./img/herophoto-480w.webp 480w,
+              ./img/herophoto-640w.webp 640w,
+              ./img/herophoto-800w.webp 800w
             "
+            sizes="(max-width: 321px) 320px, (max-width: 481px) 480px, (max-width: 641px) 640px, 800px"
             alt="personne qui se fait masser le dos"
           />
         </figure>
-        <h2 class="home__hero__herotitle">phrase d'accroche</h2>
-        <div class="home__hero__aside">
-          <q class="home__hero__aside__citation">
-            Tout ce qui ne s’exprime pas s’imprime
-          </q>
-          <em class="home__hero__aside__author">Jacques Salomé</em>
-        </div>
+        <h2 class="home__hero__herotitle">
+          Explorons ensemble le chemin vers l'équilibre et le bien être
+          intérieur
+        </h2>
+        <h3 class="home__hero__herosubtitle">
+          Laissez exprimer ce que votre corps a à libérer afin de semer les
+          graines d'un nouveau possible et de reprendre votre pouvoir intérieur
+        </h3>
         <div class="home__hero__contact linkButton">
           <a class="home__hero__contact__link" href="./contact.html">
             Prendre Contact
           </a>
         </div>
       </section>
-      <section class="home__about">
-        <h2 class="home__title">Qu'est ce que la Kinésiologie</h2>
+      <div class="home__hero__contact__mob linkButton">
+        <a class="home__hero__contact__link" href="./contact.html">
+          Prendre Contact
+        </a>
+      </div>
+      <section class="home__describ">
+        <h2 class="home__describ__title">
+          Votre Voyage vers l’Épanouissement et l’Harmonie Intérieure commence
+          ici
+        </h2>
+        <p>
+          Ma mission est de vous guider vers
+          <strong>l’épanouissement physique, émotionnel et énergétique</strong>
+          grâce à la kinésiologie, une approche holistique puissante qui vise à
+          <strong>restaurer l’harmonie intérieure.</strong>
+        </p>
+        <p>
+          Que vous recherchiez des
+          <strong>solutions pour gérer le stress</strong>,
+          <strong>améliorer votre santé globale</strong> ou
+          <strong>découvrir le potentiel de votre être intérieur</strong>, je
+          suis là pour vous accompagner dans cette aventure.
+        </p>
+        <p>
+          Contactez-moi dès aujourd’hui pour planifier votre séance et commencez
+          votre voyage vers l’épanouissement. Je suis impatiente de vous
+          accueillir, <strong>à Annecy</strong>, dans mon espace dédié à
+          l’harmonie intérieure, où votre bien-être prend le premier plan.
+        </p>
+        <div class="home__describ__aboutme linkButton">
+          <a class="home__describ__aboutme__link" href="./aboutme.html">
+            À propos de moi
+          </a>
+        </div>
+      </section>
+      <aside class="home__about">
         <p>
           <strong>La kinésiologie</strong> (qui signifie étymologiquement « la
           science du mouvement ») est une technique de rééquilibrage
@@ -136,7 +176,13 @@
           comportements inadaptés.<br />
           - Le but est de libérer le <strong>stress</strong> rencontré.
         </p>
-      </section>
+        <div class="home__hero__aside">
+          <q class="home__hero__aside__citation">
+            Tout ce qui ne s’exprime pas s’imprime
+          </q>
+          <em class="home__hero__aside__author">Jacques Salomé</em>
+        </div>
+      </aside>
     </main>
     <footer class="footer">
       <div class="footer__firstcontainer">
@@ -184,6 +230,7 @@
               Etincelles Annecy - 6 rue Léon Rey Grange - 74960 ANNECY - RDC
               1ère porte à droite
             </a>
+            <span>N° de SIRET: 952 270 262 00019</span>
           </address>
         </div>
         <div class="footer__firstcontainer__partner">
@@ -227,7 +274,7 @@
           <div class="footer__firstcontainer__socialNetwork__content">
             <a
               target="_blank"
-              href="https://www.facebook.com/karine.benvenuti.7"
+              href="https://www.facebook.com/karine.benvenuti.kinesiologie"
               rel="noreferrer"
               aria-label="facebook"
               class="footer__firstcontainer__socialNetwork__content__facebook"
@@ -265,6 +312,12 @@
         </div>
       </div>
       <div class="footer__secondcontainer">
+        <span class="footer__secondcontainer__disclaimer">
+          Le kinesilogue ne remplace en aucun cas le médecin. Il ne fait ni
+          diagnostic, ni prescription médicale. La pratique ne relève pas du
+          domaine médical mais lui est complémentaire. Remboursement possible
+          selon les mutuelles.
+        </span>
         <span class="footer__secondcontainer__credit"
           >Crédit Photo :
           <a

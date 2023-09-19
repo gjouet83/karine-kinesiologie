@@ -7,11 +7,11 @@
   height: 150px;
   background: $HeaderBackgroundColor;
   @include tb-desk {
-    grid-template-rows: 3fr 1fr;
     height: 200px;
     justify-content: center;
     overflow: hidden;
   }
+  @import '../components/burgermenu';
   &__bgndImg {
     position: absolute;
     justify-self: center;
@@ -23,8 +23,9 @@
     max-width: 255px;
     animation: ease-in-out 2s forwards appear;
     @include tb-desk {
-      margin-top: -50px;
-      width: 500px;
+      width: 400px;
+      max-width: 400px;
+      grid-row: 1/3;
     }
   }
   &__title {
@@ -39,6 +40,7 @@
     animation: ease-in-out 2s forwards slideinright;
     @include tb-desk {
       grid-column: 2/3;
+      grid-row: 2;
       font-size: 30px;
     }
     &__name {
@@ -46,6 +48,7 @@
       top: 20px;
       left: -40px;
       font-weight: bolder;
+      font-family: merienda;
     }
     &__job {
       bottom: -80px;
@@ -53,6 +56,7 @@
       position: relative;
       display: block;
       font-weight: bolder;
+      font-family: merienda;
       @include tb-desk {
         bottom: -60px;
         right: -100px;

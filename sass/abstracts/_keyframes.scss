@@ -7,6 +7,15 @@
   }
 }
 
+@keyframes slidediagright {
+  from {
+    transform: translate3d(42px, -62px, -135px);
+  }
+  to {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
 @keyframes slideinright {
   from {
     opacity: 0;

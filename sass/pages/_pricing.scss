@@ -12,35 +12,11 @@
       grid-row: 1;
     }
   }
-  &__card {
-    width: 80vw;
-    max-width: 400px;
-    height: fit-content;
-    background-color: white;
-    border: 1px solid gray;
-    border-radius: 15px;
-    text-align: center;
-    margin: 30px;
-    box-shadow: $boxShadow;
-    animation: ease-in-out 2s appear;
+  & > img {
+    display: none;
     @include tb-desk {
-      grid-column: 2;
-      grid-row: 2;
-    }
-    &__title {
-      padding: 20px;
-      margin: 0;
-      font-size: 2rem;
-      font-weight: 300;
-      color: white;
-      background-color: green;
-      border-top-right-radius: 15px;
-      border-top-left-radius: 15px;
-    }
-    &__content {
-      padding: 20px;
-      margin: 0;
-      font-size: 3rem;
+      display: block;
     }
   }
+  @import '../components/cardcontainer';
 }

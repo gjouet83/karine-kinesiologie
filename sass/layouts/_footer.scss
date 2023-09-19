@@ -1,5 +1,5 @@
 .footer {
-  background-color: green;
+  background: $footerBackgroundColor;
   color: white;
   &__firstcontainer {
     display: flex;
@@ -158,16 +158,28 @@
     }
   }
   &__secondcontainer {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     border-top: 1px solid white;
     line-height: 3rem;
     margin-left: 20px;
     margin-right: 20px;
+    &__disclaimer {
+      grid-column: 1/3;
+      grid-row: 1;
+      border-bottom: 1px solid white;
+    }
     &__credit {
+      grid-column: 1;
+      grid-row: 2;
       max-width: 70%;
       text-align: center;
       font-size: 12px;
+    }
+    &__sitemap {
+      grid-column: 2;
+      grid-row: 2;
+      text-align: center;
     }
   }
 }
