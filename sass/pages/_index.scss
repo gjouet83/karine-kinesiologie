@@ -77,32 +77,6 @@
         top: inherit;
       }
     }
-    &__aside {
-      margin-top: 30px;
-      margin-bottom: 30px;
-      display: grid;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      grid-row: 2;
-      grid-column: 1;
-      line-height: 1rem;
-      animation: ease-in-out 2s appear;
-      font-style: italic;
-      padding-bottom: 30px;
-      margin-bottom: 0;
-      @include tb-desk {
-        grid-column: 2;
-      }
-      &__citation {
-        text-align: center;
-        font-size: 1.3rem;
-      }
-      &__author {
-        justify-self: flex-end;
-        margin-top: 10px;
-      }
-    }
     &__contact {
       display: none;
       @include tb-desk {
@@ -150,11 +124,10 @@
       max-width: 400px;
     }
   }
-  &__about {
+  &__aside {
     background-color: $asidekinesio;
     margin: 20px;
     border-radius: 20px;
-
     @include tb-desk {
       padding: 20px;
       grid-column: 2;
@@ -166,6 +139,30 @@
       margin: 0 0 30px 0;
       border-radius: inherit;
       height: auto;
+    }
+    &__citation {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      display: grid;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      grid-row: 2;
+      grid-column: 1;
+      line-height: 1.3rem;
+      animation: ease-in-out 2s appear;
+      font-style: italic;
+      padding-bottom: 30px;
+      margin-bottom: 0;
+      text-align: center;
+      font-size: 1.3rem;
+      @include tb-desk {
+        grid-column: 2;
+      }
+      &__author {
+        justify-self: flex-end;
+        margin-top: 10px;
+      }
     }
   }
 }
