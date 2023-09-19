@@ -1,0 +1,72 @@
+.pricing-contact {
+  &__contact {
+    display: grid;
+    @include tablet {
+      padding: 0 10vw 0 10vw;
+    }
+    &__address {
+      display: grid;
+      grid-template-columns: 30px auto;
+      gap: 16px;
+      justify-content: flex-start;
+      & a {
+        color: black;
+      }
+      &__icocontainer {
+        align-self: center;
+        justify-self: center;
+        width: 30px;
+        height: 30px;
+        background-color: green;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &__phone,
+      &__mail,
+      &__map {
+        &__ico {
+          align-self: center;
+          justify-self: center;
+          grid-column: 1;
+          color: white;
+          fill: white;
+        }
+        &__link {
+          grid-column: 2;
+        }
+      }
+    }
+    &__map {
+      max-width: 80vw;
+      max-height: 80vw;
+      align-self: center;
+      justify-self: center;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+  }
+  &__pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tb-desk {
+      display: grid;
+      justify-content: center;
+    }
+    &__title {
+      @include tb-desk {
+        grid-column: 1/3;
+        grid-row: 1;
+      }
+    }
+    & > img {
+      display: none;
+      @include tb-desk {
+        display: block;
+      }
+    }
+    @import '../components/cardcontainer';
+  }
+}
