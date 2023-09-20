@@ -46,16 +46,12 @@
       padding-right: 10px;
       font-size: 1.5rem;
       @include tb-desk {
-        transition: all 200ms ease;
         font-size: 1rem;
-      }
-      &:hover {
-        background-color: white;
-        opacity: 0.8;
+        border-bottom: 0px solid white;
       }
       &:hover a {
-        text-decoration: underline;
-        color: green;
+        transition: all 200ms ease-in-out;
+        border-bottom: 2px solid white;
       }
     }
   }
