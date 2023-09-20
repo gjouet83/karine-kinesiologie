@@ -14,9 +14,6 @@
   transform-origin: left;
   animation: ease-in-out 1s extend;
   @include tb-desk {
-    position: relative;
-    top: 400px;
-    right: 100px;
     &:hover {
       transform-origin: center;
       transform: scale(1.1);

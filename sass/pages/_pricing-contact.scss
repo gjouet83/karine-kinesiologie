@@ -1,14 +1,14 @@
 .pricing-contact {
   &__contact {
     display: grid;
-    @include tablet {
-      padding: 0 10vw 0 10vw;
-    }
+
     &__address {
       display: grid;
       grid-template-columns: 30px auto;
       gap: 16px;
       justify-content: flex-start;
+      padding-left: 10%;
+      padding-right: 10%;
       & a {
         color: black;
       }
@@ -39,12 +39,14 @@
       }
     }
     &__map {
-      max-width: 80vw;
-      max-height: 80vw;
+      width: 100vw;
       align-self: center;
       justify-self: center;
       margin-bottom: 30px;
       margin-top: 30px;
+      @include tb-desk {
+        width: 80vw;
+      }
     }
   }
   &__pricing {
