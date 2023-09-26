@@ -46,7 +46,7 @@
       padding-right: 10px;
       font-size: 1.5rem;
       @include tb-desk {
-        font-size: 1rem;
+        font-weight: 600;
         border-bottom: 0px solid white;
       }
       &:hover a {
