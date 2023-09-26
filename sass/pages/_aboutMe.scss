@@ -51,10 +51,6 @@
     padding: 20px;
     margin: 20px;
     border-radius: 20px;
-    @include tablet {
-      padding-left: 15%;
-      padding-right: 15%;
-    }
     @include tb-desk {
       grid-row: 2/4;
       grid-column: 2;
@@ -63,6 +59,8 @@
     }
     & > span {
       display: block;
+      text-indent: 30px;
+      text-align: justify;
     }
   }
   &__formation {
@@ -76,14 +74,13 @@
     flex-direction: column;
     &__list {
       list-style: none;
-      padding: 30px;
       &__element {
         display: grid;
         width: fit-content;
         &__date {
           grid-column: 1;
         }
-        & strong {
+        &__content {
           grid-column: 2;
           padding-left: 20px;
         }

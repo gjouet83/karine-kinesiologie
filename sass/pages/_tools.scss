@@ -30,7 +30,6 @@
       }
       & > p {
         padding: 4%;
-        font-weight: bold;
         background-color: rgba($color: white, $alpha: 0.5);
         @include tb-desk {
           grid-row: 2;

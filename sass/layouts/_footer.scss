@@ -17,17 +17,14 @@
         border-right: 1px solid white;
         border-bottom: inherit;
         max-width: 329px;
-        padding-right: 7%;
+        padding-right: 6%;
       }
       &__address {
-        width: 100%;
         display: grid;
         gap: 0 18px;
         align-items: center;
         margin-left: 10px;
         margin-right: 10px;
-        @include tb-desk {
-        }
         &__header {
           grid-row: 1;
           font-style: normal;
@@ -38,7 +35,6 @@
           }
         }
         &__phone {
-          padding-left: 50px;
           grid-row: 2;
           @include tb-desk {
             &:hover {
@@ -47,7 +43,6 @@
           }
         }
         &__mail {
-          padding-left: 50px;
           grid-row: 3;
           @include tb-desk {
             &:hover {
@@ -66,7 +61,6 @@
           }
         }
         &__map {
-          padding-left: 50px;
           line-height: inherit;
           grid-row: 4;
           margin-bottom: 10px;

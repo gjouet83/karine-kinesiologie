@@ -28,9 +28,12 @@
         height: 100%;
         object-fit: cover;
         object-position: top;
-        opacity: 0.6;
+        opacity: 0.5;
         @include tablet {
           width: 100vw;
+        }
+        @include tb-desk {
+          opacity: 1;
         }
       }
       @include tb-desk {
@@ -88,10 +91,8 @@
         grid-column: 2;
         grid-row: 2;
         top: -180px;
-        right: 180px;
+        right: 250px;
         max-width: 20vw;
-        @include desktop {
-        }
       }
     }
   }
@@ -123,6 +124,7 @@
     background-color: $asidekinesio;
     margin: 20px;
     border-radius: 20px;
+    padding: 10px;
     @include tb-desk {
       padding: 20px;
       grid-column: 2;
