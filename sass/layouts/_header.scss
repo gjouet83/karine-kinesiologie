@@ -7,7 +7,7 @@
   height: 150px;
   background: $HeaderBackgroundColor;
   @include tb-desk {
-    height: 200px;
+    height: 280px;
     justify-content: center;
     overflow: hidden;
   }
@@ -22,7 +22,9 @@
     width: 100vw;
     max-width: 255px;
     animation: ease-in-out 2s forwards appear;
+    align-self: flex-end;
     @include tb-desk {
+      top: 25px;
       width: 400px;
       max-width: 400px;
       grid-row: 1/3;
@@ -49,17 +51,20 @@
       left: -40px;
       font-weight: bolder;
       font-family: merienda;
+      @include tb-desk {
+        left: -60px;
+      }
     }
     &__job {
       bottom: -80px;
-      right: 0px;
+      right: -60px;
       position: relative;
       display: block;
       font-weight: bolder;
       font-family: merienda;
       @include tb-desk {
-        bottom: -60px;
-        right: -100px;
+        bottom: -80px;
+        right: -60px;
       }
     }
   }
