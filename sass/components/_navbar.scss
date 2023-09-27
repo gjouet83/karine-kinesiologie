@@ -14,11 +14,11 @@
     background: transparent;
     text-align: left;
     z-index: 4;
-    top: 0px;
     height: 3.6rem;
     grid-column: 1/4;
     grid-row: 1;
-    justify-self: center;
+    left: 50%;
+    transform: translateX(-50%);
     transition: inherit;
     animation: ease-in-out 2s forwards appear;
     position: fixed;
