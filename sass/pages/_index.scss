@@ -34,13 +34,16 @@
         }
         @include tb-desk {
           opacity: 1;
+          width: 100%;
         }
       }
       @include tb-desk {
         grid-column: 1/3;
         grid-row: 1/4;
-        max-width: 80vw;
         max-height: 70vh;
+      }
+      @include desktop {
+        max-width: 80vw;
       }
     }
     &__herotitle {
