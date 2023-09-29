@@ -37,6 +37,7 @@
       border-radius: 25px;
       margin: 0;
       background: $navbarColor;
+      box-shadow: $boxShadowNav;
     }
     &__element {
       max-width: fit-content;

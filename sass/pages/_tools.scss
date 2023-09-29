@@ -5,7 +5,6 @@
     & > li {
       display: grid;
       position: relative;
-      gap: 20px;
       & > img {
         display: none;
         @include tb-desk {
@@ -21,7 +20,7 @@
           border-radius: 20px;
         }
       }
-      & > h3 {
+      & > h2 {
         @include tb-desk {
           grid-row: 1;
           grid-column: 1/3;
@@ -29,6 +28,7 @@
         }
       }
       & > p {
+        margin: 0;
         padding: 4%;
         background-color: rgba($color: white, $alpha: 0.5);
         @include tb-desk {
@@ -39,6 +39,6 @@
     }
   }
 }
-.session {
+.sessionLink {
   width: 300px;
 }

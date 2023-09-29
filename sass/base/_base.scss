@@ -18,8 +18,11 @@ html {
       padding: 0 10vw 0 10vw;
     }
   }
-  h2 {
+  h1 {
     text-align: center;
     animation: ease-in-out 2s forwards slideinleft;
+  }
+  h2 {
+    font-size: 1.2rem;
   }
 }
