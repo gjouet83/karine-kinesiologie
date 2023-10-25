@@ -133,6 +133,7 @@
     padding: 10px;
     @include tb-desk {
       padding: 20px;
+      padding-top: 30px;
       grid-column: 2;
       grid-row: 2;
       height: fit-content;
@@ -161,6 +162,7 @@
       font-size: 1.3rem;
       @include tb-desk {
         grid-column: 2;
+        margin-top: 150px;
       }
       &__author {
         justify-self: flex-end;
