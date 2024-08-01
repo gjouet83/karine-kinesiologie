@@ -125,6 +125,9 @@
       text-align: center;
       padding: 0;
       border-bottom: 1px solid white;
+      &__soul {
+        font-size: 2rem;
+      }
       @include tb-desk {
         border-bottom: inherit;
         max-width: 350px;

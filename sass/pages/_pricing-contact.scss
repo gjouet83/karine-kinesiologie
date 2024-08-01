@@ -79,7 +79,7 @@
     text-align: center;
     margin-top: 80px;
     @include tb-desk {
-      display: grid;
+      display: flex;
       justify-content: center;
     }
     &__title {
